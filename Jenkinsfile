@@ -18,7 +18,7 @@ pipeline{
                     nexusUrl: 'http://52.66.233.131:8081', 
                     nexusVersion: 'nexus3',protocol: 'http', 
                     repository: 'shaikmoula-devops-snapshot', 
-                    version: '0.0.1-snapshot'
+                    version: '1.0-SNAPSHOT'
             }
         }
 
