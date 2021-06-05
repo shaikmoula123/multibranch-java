@@ -21,11 +21,11 @@ pipeline{
                         [artifactId: 'multibranch', classifier: '', file: 'target/*.war', type: 'war']
                     ], 
                     credentialsId: 'nexus3', 
-                    groupId: 'in.javahome', 
-                    nexusUrl: '172.31.70.16:8081', 
+                    groupId: 'devops.shaikmoula', 
+                    nexusUrl: 'http://52.66.233.131:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: 'http://3.209.82.68:8081/repository/javahome-app/', 
+                    repository: 'shaikmoula-devops-snapshot', 
                     version: '1.0'
             }
         }
