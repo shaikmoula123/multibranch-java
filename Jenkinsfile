@@ -13,9 +13,6 @@ pipeline{
             }
         }
         stage('Upload to Nexus'){
-            when {
-                branch 'develop'
-            }
             steps{
                 nexusArtifactUploader artifacts: [
                         [artifactId: 'multibranch', classifier: '', file: 'target/myweb-0.0.1-snapshot*.war', type: 'war']], 
