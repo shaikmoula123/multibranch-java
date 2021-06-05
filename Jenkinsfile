@@ -18,15 +18,13 @@ pipeline{
             }
             steps{
                 nexusArtifactUploader artifacts: [
-                        [artifactId: 'multibranch', classifier: '', file: 'target/*.war', type: 'war']
-                    ], 
+                        [artifactId: 'multibranch', classifier: '', file: 'target/myweb-0.0.1-snapshot*.war', type: 'war']], 
                     credentialsId: 'nexus3', 
                     groupId: 'devops.shaikmoula', 
                     nexusUrl: 'http://52.66.233.131:8081', 
-                    nexusVersion: 'nexus3', 
-                    protocol: 'http', 
+                    nexusVersion: 'nexus3',protocol: 'http', 
                     repository: 'shaikmoula-devops-snapshot', 
-                    version: '1.0'
+                    version: '0.0.1-snapshot'
             }
         }
 
