@@ -12,7 +12,7 @@ pipeline{
         stage('Upload to Nexus'){
             steps{
                 nexusArtifactUploader artifacts: [
-                        [artifactId: 'multibranch', classifier: '', file: 'target/ myweb 1.0-SNAPSHOT', type: 'war']], 
+                        [artifactId: 'multibranch', classifier: '', file: 'multibranch', type: 'war']], 
                     credentialsId: 'nexus3', 
                     groupId: 'devops.shaikmoula', 
                     nexusUrl: 'http://52.66.233.131:8081', 
